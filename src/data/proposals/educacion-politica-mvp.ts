@@ -252,14 +252,15 @@ export const educacionPoliticaMvp: ProposalData = {
     id: 'escalabilidad',
     title: 'Escalabilidad futura',
     content:
-      'El MVP está diseñado para crecer por fases. Primero validamos tracción en web; después ampliamos sin cambiar el núcleo tecnológico.',
+      'El producto crece por etapas sin reescribir el núcleo técnico: primero el MVP web, luego funcionalidades de negocio, app móvil y escala comercial.',
     items: [
-      'Fase 2: Aplicación móvil con Ionic + Angular (Android e iOS).',
-      'Fase 3: Certificados, gamificación y notificaciones push.',
-      'Fase 4: Modo offline y descarga de episodios en app móvil.',
-      'Fase 5: Marketplace de docentes y revenue share.',
-      'Fase 6: Analytics avanzado, A/B testing y recomendaciones (con IA opcional).',
-      'Escalado técnico: CDN, caché Redis, colas de workers y réplicas de BD cuando el tráfico lo exija.',
+      'Fase 1 · MVP web (Q1): plataforma responsive, cursos en audio, pagos digitales y paneles por rol.',
+      'Fase 2 · Crecimiento (Q2): suscripciones, notificaciones push, reportes avanzados y mejoras UX.',
+      'Fase 3 · Expansión (Q3): app móvil Ionic + Angular (Android e iOS), certificados e integraciones LMS.',
+      'Fase 4 · App móvil avanzada: modo offline y descarga de episodios para escuchar sin conexión.',
+      'Fase 5 · Escala comercial (Q4): marketplace de docentes, revenue share, API pública y multi-tenant.',
+      'Fase 6 · Inteligencia de producto: analytics avanzado, A/B testing y recomendaciones (IA opcional).',
+      'Escalado técnico (bajo demanda): CDN, caché Redis, colas de workers y réplicas de BD cuando el tráfico lo exija.',
     ],
   },
   roadmap: [

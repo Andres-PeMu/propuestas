@@ -90,9 +90,11 @@ export interface ProposalData {
       description: string
     }
     infrastructure: {
+      disclaimer?: string
       monthlyMin: number
       monthlyMax: number
-      items: { name: string; cost: string }[]
+      scenarios?: { name: string; rangeLabel: string; description: string }[]
+      items: { name: string; cost: string; note?: string }[]
     }
   }
   recommendations: string[]

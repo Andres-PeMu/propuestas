@@ -371,19 +371,55 @@ export const educacionPoliticaMvp: ProposalData = {
     ],
     maintenance: {
       percentage: 10,
-      monthlyAmount: 670_000,
+      monthlyAmount: 70_000,
       description:
-        'Mantenimiento evolutivo y correctivo: ~10% del valor del proyecto anualizado (~$670.000 COP/mes). Incluye soporte, parches de seguridad, ajustes menores y monitoreo básico.',
+        'Mantenimiento evolutivo y correctivo opcional: ~10% del valor del proyecto anualizado (~$70.000 COP/mes sobre inversión de $8.000.000). Incluye soporte, parches de seguridad, ajustes menores y monitoreo básico. El monto puede ajustarse según horas acordadas.',
     },
     infrastructure: {
-      monthlyMin: 350_000,
-      monthlyMax: 550_000,
+      disclaimer:
+        'Cifras verificadas con precios públicos de proveedores (mayo 2026). Conversión orientativa TRM ~$4.200 COP/USD. Los costos reales dependen del tráfico, almacenamiento de audio y plan comercial elegido.',
+      monthlyMin: 80_000,
+      monthlyMax: 500_000,
+      scenarios: [
+        {
+          name: 'Fase inicial (validación)',
+          rangeLabel: '$80.000 – $180.000 COP/mes',
+          description:
+            'Uso de planes gratuitos o básicos: Vercel Hobby (solo no comercial), Neon Free, R2 dentro de 10 GB gratis, API en Railway Hobby (~USD 5/mes).',
+        },
+        {
+          name: 'Producción comercial',
+          rangeLabel: '$180.000 – $500.000 COP/mes',
+          description:
+            'Vercel Pro (~USD 20/mes), API y base de datos en planes de pago, más audio almacenado y reproducciones según crecimiento de usuarios.',
+        },
+      ],
       items: [
-        { name: 'Vercel (frontend web)', cost: '$0 – $80.000' },
-        { name: 'Railway / Render (API)', cost: '$120.000 – $200.000' },
-        { name: 'Neon PostgreSQL', cost: '$0 – $100.000' },
-        { name: 'Cloudflare R2 (audio)', cost: '$50.000 – $150.000' },
-        { name: 'Dominio + SSL', cost: '$30.000 – $50.000' },
+        {
+          name: 'Vercel (frontend web)',
+          cost: '$0 – $85.000/mes',
+          note: 'Hobby gratis (uso no comercial). Pro ~USD 20/mes (~$84.000 COP). Fuente: vercel.com/pricing',
+        },
+        {
+          name: 'Railway / Render (API)',
+          cost: '$21.000 – $210.000/mes',
+          note: 'Railway Hobby USD 5/mes + consumo. Render servicios desde ~USD 7/mes. Fuente: railway.com/pricing, render.com',
+        },
+        {
+          name: 'Neon PostgreSQL',
+          cost: '$0 – $85.000/mes',
+          note: 'Plan Free permanente (límites de cómputo/almacenamiento). Uso de pago por consumo si se supera. Fuente: neon.tech/pricing',
+        },
+        {
+          name: 'Cloudflare R2 (audio)',
+          cost: '$0 – $130.000/mes',
+          note: '10 GB y operaciones gratis/mes. Almacenamiento ~USD 0,015/GB-mes. Egreso sin costo. MVP bajo tráfico suele quedar en tier gratuito. Fuente: developers.cloudflare.com/r2/pricing',
+        },
+        {
+          name: 'Dominio .com / .com.co',
+          cost: '~$5.000 – $7.000/mes',
+          note: 'Registro anual ~$55.000 – $75.000 COP/año en registradores locales (ej. mi.com.co, colombiahosting). SSL incluido en Vercel/Cloudflare.',
+        },
       ],
     },
   },

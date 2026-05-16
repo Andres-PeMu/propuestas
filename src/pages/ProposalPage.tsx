@@ -361,19 +361,40 @@ export function ProposalPage() {
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-6">
               <CreditCard className="mb-2 h-6 w-6 text-slate-600" />
-              <h4 className="font-semibold">Infraestructura mensual (MVP)</h4>
+              <h4 className="font-semibold">Infraestructura mensual (estimada)</h4>
               <p className="mt-2 text-2xl font-bold text-slate-900">
                 {formatCOP(pricing.infrastructure.monthlyMin)} –{' '}
                 {formatCOP(pricing.infrastructure.monthlyMax)}
               </p>
-              <ul className="mt-4 space-y-2">
+              {pricing.infrastructure.disclaimer && (
+                <p className="mt-2 text-xs leading-relaxed text-slate-500">
+                  {pricing.infrastructure.disclaimer}
+                </p>
+              )}
+              {pricing.infrastructure.scenarios?.map((scenario) => (
+                <div
+                  key={scenario.name}
+                  className="mt-4 rounded-lg bg-slate-50 p-3 text-sm"
+                >
+                  <p className="font-medium text-slate-800">{scenario.name}</p>
+                  <p className="text-brand-700">{scenario.rangeLabel}</p>
+                  <p className="mt-1 text-slate-600">{scenario.description}</p>
+                </div>
+              ))}
+              <ul className="mt-4 space-y-3">
                 {pricing.infrastructure.items.map((item) => (
-                  <li
-                    key={item.name}
-                    className="flex justify-between text-sm text-slate-600"
-                  >
-                    <span>{item.name}</span>
-                    <span className="font-medium">{item.cost}</span>
+                  <li key={item.name} className="text-sm text-slate-600">
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <span className="font-medium text-slate-800">{item.name}</span>
+                      <span className="shrink-0 font-semibold text-slate-700">
+                        {item.cost}
+                      </span>
+                    </div>
+                    {item.note && (
+                      <p className="mt-1 text-xs leading-relaxed text-slate-500">
+                        {item.note}
+                      </p>
+                    )}
                   </li>
                 ))}
               </ul>

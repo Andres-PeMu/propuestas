@@ -1,0 +1,16 @@
+export const EMPATIA_NAV = [
+  { id: 'introduccion', label: 'Intro' },
+  { id: 'problema', label: 'Problema' },
+  { id: 'objetivos', label: 'Objetivos' },
+  { id: 'solucion', label: 'Solución' },
+  { id: 'alcance', label: 'Alcance' },
+  { id: 'modulos', label: 'Módulos' },
+  { id: 'app-movil', label: 'App móvil' },
+  { id: 'arquitectura', label: 'Arquitectura' },
+  { id: 'infraestructura', label: 'Infra' },
+  { id: 'seguridad', label: 'Seguridad' },
+  { id: 'fases', label: 'Fases' },
+  { id: 'inversion', label: 'Inversión' },
+  { id: 'soporte', label: 'Soporte' },
+  { id: 'recomendaciones', label: 'Cierre' },
+] as const

@@ -1,0 +1,41 @@
+.theme-empatia {
+  --color-brand-50: #e6f7fd;
+  --color-brand-100: #b3e8fa;
+  --color-brand-200: #80d9f6;
+  --color-brand-300: #4dcaf2;
+  --color-brand-400: #26bdef;
+  --color-brand-500: #00adef;
+  --color-brand-600: #0088c7;
+  --color-brand-700: #005696;
+  --color-brand-800: #003d6b;
+  --color-brand-900: #002440;
+  --color-accent-400: #a8d96a;
+  --color-accent-500: #8dc63f;
+  --color-accent-600: #6fa82e;
+}
+
+.theme-empatia {
+  --color-brand-50: #e6f7fd;
+  --color-brand-100: #b3e8fa;
+  --color-brand-200: #80d9f6;
+  --color-brand-300: #4dcaf2;
+  --color-brand-400: #26bdef;
+  --color-brand-500: #00adef;
+  --color-brand-600: #0088c7;
+  --color-brand-700: #005696;
+  --color-brand-800: #003d6b;
+  --color-brand-900: #002440;
+}
+
+.theme-empatia .proposal-gradient {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 173, 239, 0.28), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(141, 198, 63, 0.15), transparent),
+    linear-gradient(180deg, #003d6b 0%, #005696 55%, #002440 100%);
+}
+
+.theme-empatia .empatia-accent-bar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent-500), var(--color-brand-500));
+  transform: skewY(-1deg);
+}

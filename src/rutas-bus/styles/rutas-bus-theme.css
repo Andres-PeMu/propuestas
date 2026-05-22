@@ -1,0 +1,24 @@
+.theme-rutas-bus {
+  --color-accent-500: #f97316;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-accent-500: #f97316;
+  --color-seat-free: #22c55e;
+  --color-seat-hold: #3b82f6;
+  --color-seat-sold: #ef4444;
+}
+
+.theme-rutas-bus .proposal-gradient {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.3), transparent),
+    radial-gradient(ellipse 50% 40% at 100% 0%, rgba(249, 115, 22, 0.12), transparent),
+    linear-gradient(180deg, #1e3a8a 0%, #1d4ed8 55%, #172554 100%);
+}

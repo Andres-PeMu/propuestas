@@ -36,7 +36,7 @@ export const rutasBusPhases: RutasBusPhase[] = [
 ]
 
 export const rutasBusTimeline = {
-  totalLabel: '10–12 semanas (MVP acotado para empresa en arranque)',
+  totalLabel: '10–12 semanas',
   breakdown: [
     { phase: 'Levantamiento', weeks: 1 },
     { phase: 'Firebase + asientos', weeks: 3 },
@@ -49,13 +49,13 @@ export const rutasBusPricing = {
   totalAmount: 6_000_000,
   transferModelAmount: 6_000_000,
   pasarelaAddonAmount: 1_500_000,
-  note: 'Inversión **MVP económico** para agencia que está comenzando: **$6.000.000 COP** (único). Incluye LP, app móvil y Firebase. Alcance esencial; funciones extra se cotizan cuando el negocio crezca.',
+  note: 'Inversión MVP: $6.000.000 COP (único). Incluye LP, app móvil y Firebase. Alcance esencial; funciones extra se cotizan cuando el negocio crezca.',
   costBenefitNote:
-    'Precio pensado para volumen inicial bajo de viajes y usuarios. Se prioriza plan **Firebase Spark (gratuito)** y entregables core: mapa de asientos, transferencia con comprobante y panel admin. No compite con cotización enterprise ($30M+); es una base para arrancar y validar ventas en línea.',
+    'Precio pensado para volumen inicial bajo de viajes y usuarios. Se prioriza plan Firebase Spark (gratuito) y entregables core: mapa de asientos, transferencia con comprobante y panel admin. No compite con cotización enterprise ($30M+); es una base para arrancar y validar ventas en línea.',
   financialTerms: [
     'Valor total del desarrollo: $6.000.000 COP (sin rango alternativo en esta propuesta).',
     'Operación Firebase estimada casi $0 en el primer año si el tráfico es moderado.',
-    'Soporte de seguimiento opcional: **$150.000 COP/mes** (no obligatorio).',
+    'Soporte de seguimiento opcional: $150.000 COP/mes (no obligatorio).',
     'Pasarela Wompi/PayU (opcional): +$1.500.000 COP desarrollo + comisiones por venta.',
     'Cuentas Firebase, Apple Developer y Google Play a cargo del cliente.',
   ],
@@ -82,13 +82,13 @@ export const rutasBusPricing = {
   maintenance: {
     monthlyAmount: 150_000,
     description:
-      'Plan de seguimiento opcional: **$150.000 COP/mes**. Incluye estar pendientes de fallos, dudas de uso, revisión ligera de Firebase y pequeños ajustes (hasta ~3 h/mes). No incluye nuevos módulos ni desarrollo mayor.',
+      'Plan de seguimiento opcional: $150.000 COP/mes. Incluye estar pendientes de fallos, dudas de uso, revisión ligera de Firebase y pequeños ajustes (hasta ~3 h/mes). No incluye nuevos módulos ni desarrollo mayor.',
   },
   firebaseAnnual: {
     min: 0,
     max: 360_000,
     description:
-      'Con pocos viajes y usuarios concurrentes, el plan **Spark de Firebase suele ser $0/año**. Si más adelante superan límites gratuitos (muchos accesos simultáneos al mapa), el excedente típico es bajo: **$0 – $360.000 COP/año** (~$30.000/mes en Blaze). Sin servidor propio.',
+      'Con pocos viajes y usuarios concurrentes, el plan Spark de Firebase suele ser $0/año. Si más adelante superan límites gratuitos (muchos accesos simultáneos al mapa), el excedente típico es bajo: $0 – $360.000 COP/año (~$30.000/mes en Blaze). Sin servidor propio.',
   },
 }
 
@@ -101,7 +101,7 @@ export const rutasBusRecommendations = [
 ]
 
 export const rutasBusConclusion =
-  'Para una **agencia en crecimiento**, esta propuesta ofrece lo esencial: LP, app, asientos en tiempo real y pagos por transferencia con comprobante, por **$6.000.000 COP**. Firebase puede costar **$0 al año** al inicio; el acompañamiento mensual es de solo **$150.000 COP** si desean que alguien esté pendiente. Cuando el negocio escale, se pueden sumar pasarela, más viajes o funciones sin rehacer la base.'
+  'Esta propuesta ofrece lo esencial: LP, app, asientos en tiempo real y pagos por transferencia con comprobante, por $6.000.000 COP. Firebase puede costar $0 al año al inicio; el acompañamiento mensual es de solo $150.000 COP si desean que alguien esté pendiente. Cuando el negocio escale, se pueden sumar pasarela, más viajes o funciones sin rehacer la base.'
 
 export const rutasBusLegal = [
   'Propuesta válida 30 días.',

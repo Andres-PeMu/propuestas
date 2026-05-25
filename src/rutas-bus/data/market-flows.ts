@@ -13,7 +13,7 @@ export const rutasBusCompetitors: CompetitorRef[] = [
     approach:
       'Catálogo de muchas empresas de bus; selección de asiento en mapa; pago con tarjeta/PSE y confirmación automática.',
     takeaway:
-      'El mapa en tiempo real y el checkout claro son estándar; nosotros aplicamos lo mismo pero para **una sola agencia** y sus viajes fijos.',
+      'El mapa en tiempo real y el checkout claro son estándar; nosotros aplicamos lo mismo pero para una sola agencia y sus viajes fijos.',
   },
   {
     name: 'Sistemas con Socket.io / Redis (TripTix, Sarathi)',
@@ -27,7 +27,7 @@ export const rutasBusCompetitors: CompetitorRef[] = [
     approach:
       'Lista en Excel o cuaderno; foto del comprobante por chat; confirmación manual.',
     takeaway:
-      'Nuestro MVP **formaliza** ese flujo sin quitar la validación humana del comprobante.',
+      'Nuestro MVP formaliza ese flujo sin quitar la validación humana del comprobante.',
   },
 ]
 
@@ -36,20 +36,19 @@ export const rutasBusSeatStatuses: SeatStatus[] = [
     color: '#22C55E',
     label: 'Verde — Disponible',
     meaning: 'Asiento libre para selección.',
-    technical: 'Estado `available` en Firestore.',
+    technical: '',
   },
   {
     color: '#3B82F6',
     label: 'Azul — En trámite',
     meaning: 'Alguien lo seleccionó y está en checkout o subiendo comprobante.',
-    technical:
-      'Estado `holding` + `holdExpiresAt` (ej. 10 min). Cloud Function o job libera a verde si expira.',
+    technical: '',
   },
   {
     color: '#EF4444',
     label: 'Rojo — Vendido / ocupado',
     meaning: 'Pago confirmado (admin o pasarela).',
-    technical: 'Estado `sold` + `bookingId` + datos del pasajero.',
+    technical: '',
   },
 ]
 
@@ -113,5 +112,4 @@ export const rutasBusPasarelaComparison: PasarelaComparison[] = [
   },
 ]
 
-export const rutasBusPasarelaCostNote =
-  'Integrar pasarela suma aproximadamente **+$1.500.000 COP** al desarrollo (webhooks y pruebas), más comisión por venta (~3–4% + fijo). Para una agencia que **recién comienza**, lo recomendable es **solo transferencia + comprobante** en el MVP de $6.000.000 COP y activar pasarela cuando el flujo de ventas lo justifique.'
+export const rutasBusPasarelaCostNote = ''

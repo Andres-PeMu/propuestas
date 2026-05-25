@@ -1,7 +1,6 @@
 export const RUTAS_BUS_NAV = [
   { id: 'introduccion', label: 'Intro' },
   { id: 'levantamiento', label: 'Preguntas' },
-  { id: 'problema', label: 'Problema' },
   { id: 'referentes', label: 'Mercado' },
   { id: 'solucion', label: 'Solución' },
   { id: 'asientos', label: 'Asientos' },

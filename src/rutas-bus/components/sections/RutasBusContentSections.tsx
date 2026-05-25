@@ -48,17 +48,6 @@ export function RutasBusIntroDiscovery({ data }: { data: RutasBusProposal }) {
         </div>
       </RutasBusAnimatedSection>
 
-      <RutasBusAnimatedSection id={data.problem.id} className="mb-24">
-        <RutasBusSectionHeader title={data.problem.title} subtitle={data.problem.subtitle} />
-        <ul className="space-y-3">
-          {data.problem.items?.map((item) => (
-            <li key={item} className="rounded-lg border border-red-100 bg-red-50/50 p-4 text-slate-700">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </RutasBusAnimatedSection>
-
       <RutasBusAnimatedSection id="objetivos" className="mb-24">
         <RutasBusSectionHeader title="Objetivos" />
         <ul className="mb-8 space-y-2">
@@ -162,7 +151,6 @@ export function RutasBusSeatPayment({ data }: { data: RutasBusProposal }) {
               />
               <p className="font-semibold text-slate-900">{s.label}</p>
               <p className="mt-1 text-sm text-slate-600">{s.meaning}</p>
-              <p className="mt-2 font-mono text-xs text-slate-500">{s.technical}</p>
             </div>
           ))}
         </div>
@@ -199,9 +187,6 @@ export function RutasBusSeatPayment({ data }: { data: RutasBusProposal }) {
             </ol>
           </div>
         </div>
-        <p className="mt-8 rounded-xl bg-slate-100 p-5 text-sm text-slate-700">
-          {data.pasarelaCostNote}
-        </p>
         <h3 className="mb-4 mt-10 text-lg font-semibold">Comparativo de costo por pasarela</h3>
         <div className="overflow-x-auto rounded-2xl border border-slate-200">
           <table className="w-full min-w-[520px] text-sm">

@@ -56,7 +56,7 @@ export const rutasBusFirebase = {
   id: 'firebase',
   title: 'Firebase — plan gratuito (Spark) y escalado',
   content:
-    'Iniciamos en plan **Spark (sin tarjeta)** para validar el negocio. Límites orientativos según documentación Google Firebase 2026:',
+    'Iniciamos en plan Spark (sin tarjeta) para validar el negocio. Límites orientativos según documentación Google Firebase 2026:',
   limits: [
     { label: 'Firestore — lecturas', value: '50.000 / día' },
     { label: 'Firestore — escrituras', value: '20.000 / día' },
@@ -65,7 +65,7 @@ export const rutasBusFirebase = {
     { label: 'Auth', value: 'Sin límite duro en usuarios típicos MVP' },
   ],
   upgradeNote:
-    'Empresa en arranque: con pocos viajes publicados y decenas de usuarios a la vez, el plan Spark suele bastar (**$0/año**). Solo si un viaje convoca cientos de personas simultáneas se valora Blaze; estimación realista año 1: **$0 – $360.000 COP/año**.',
+    'Con pocos viajes publicados y decenas de usuarios a la vez, el plan Spark suele bastar ($0/año). Solo si un viaje convoca cientos de personas simultáneas se valora Blaze; estimación realista año 1: $0 – $360.000 COP/año.',
   items: [
     'Reglas de seguridad: cliente solo lee viajes publicados; solo admin escribe plantillas.',
     'Índices compuestos para listar reservas por viaje y estado de pago.',

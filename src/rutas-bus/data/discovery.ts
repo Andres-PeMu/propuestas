@@ -5,7 +5,6 @@ export const rutasBusDiscovery: DiscoveryQuestion[] = [
   {
     category: 'Negocio y operación',
     questions: [
-      '¿Cuántos viajes programados publican al mes y cuántos asientos promedio por bus?',
       '¿Cuántas personas atienden hoy las reservas (ventanilla, WhatsApp, llamadas)?',
       '¿Política de cancelación, cambio de fecha y reembolso?',
       '¿Hay lista de espera cuando un viaje se llena?',
@@ -24,7 +23,6 @@ export const rutasBusDiscovery: DiscoveryQuestion[] = [
   {
     category: 'Bus y asientos',
     questions: [
-      '¿Tipos de distribución (1 piso, 2 pisos, van, buseta)? ¿Plantillas reutilizables?',
       '¿Asientos numerados fijos o configurables por viaje?',
       '¿Cuánto tiempo máximo debe durar el “azul” mientras alguien paga (5, 10, 15 min)?',
       '¿Permiten seleccionar varios asientos en una sola reserva?',

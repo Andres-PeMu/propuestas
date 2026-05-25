@@ -5,7 +5,7 @@ export const rutasBusSolution: RutasBusSection = {
   title: 'Solución propuesta',
   subtitle: 'No es marketplace de muchas empresas: es la vitrina digital de sus viajes ya programados',
   content:
-    'Tres piezas: (1) **Landing Page** Angular para promocionar viajes, galería de fotos y botón “Reservar”; (2) **App móvil** Ionic + Angular (Android/iOS) para pasajeros y admin; (3) **Backend serverless Firebase** — sin servidor Node dedicado al inicio. Los viajes se crean en admin; el cliente solo elige entre los publicados, paga y envía comprobante.',
+    'Tres piezas: (1) Landing Page Angular para promocionar viajes, galería de fotos y botón “Reservar”; (2) App móvil Ionic + Angular (Android/iOS) para pasajeros y admin; (3) Backend serverless Firebase — sin servidor Node dedicado al inicio. Los viajes se crean en admin; el cliente solo elige entre los publicados, paga y envía comprobante.',
   bullets: [
     {
       label: 'Landing Page',

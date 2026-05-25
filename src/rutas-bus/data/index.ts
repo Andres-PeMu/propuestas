@@ -41,7 +41,7 @@ export const rutasBusProposal: RutasBusProposal = {
     id: 'introduccion',
     title: 'Introducción',
     content:
-      'La agencia organiza viajes en bus con fechas y destinos definidos; el pasajero elige viaje, asiento y paga. Propuesta pensada para una **empresa que está comenzando**: inversión de desarrollo acotada (**$6.000.000 COP**), Firebase en plan gratuito al inicio y soporte mensual opcional de solo **$150.000 COP** para estar pendientes.',
+      'La agencia organiza viajes en bus con fechas y destinos definidos; el pasajero elige viaje, asiento y paga. Inversión de desarrollo acotada ($6.000.000 COP), Firebase en plan gratuito al inicio y soporte mensual opcional de solo $150.000 COP para estar pendientes.',
     bullets: [
       {
         label: 'Modelo de negocio',

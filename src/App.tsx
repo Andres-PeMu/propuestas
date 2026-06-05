@@ -3,6 +3,7 @@ import { ProposalPage } from '@/pages/ProposalPage'
 import { NotFoundPage } from '@/pages/NotFoundPage'
 import { EmpatiaProposalPage } from '@/empatia/pages/EmpatiaProposalPage'
 import { RutasBusProposalPage } from '@/rutas-bus/pages/RutasBusProposalPage'
+import { InventarioProposalPage } from '@/inventario-empresarial/pages/InventarioProposalPage'
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
         <Route
           path="/p/agencia-viajes-bus-reservas"
           element={<RutasBusProposalPage />}
+        />
+        <Route
+          path="/p/sistema-inventario-empresarial-mvp"
+          element={<InventarioProposalPage />}
         />
         <Route path="/p/:slug" element={<ProposalPage />} />
         <Route path="/404" element={<NotFoundPage />} />

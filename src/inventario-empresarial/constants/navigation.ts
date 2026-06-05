@@ -1,0 +1,15 @@
+export const INVENTARIO_NAV = [
+  { id: 'introduccion', label: 'Resumen' },
+  { id: 'objetivos', label: 'Objetivos' },
+  { id: 'solucion', label: 'Solución' },
+  { id: 'beneficios', label: 'Beneficios' },
+  { id: 'alcance', label: 'Alcance' },
+  { id: 'modulos', label: 'Módulos' },
+  { id: 'dispositivos', label: 'Celulares' },
+  { id: 'firebase', label: 'Costo nube' },
+  { id: 'arquitectura', label: 'Cómo funciona' },
+  { id: 'escalabilidad', label: 'Escala' },
+  { id: 'fases', label: 'Fases' },
+  { id: 'costos', label: 'Costos' },
+  { id: 'cierre', label: 'Cierre' },
+] as const

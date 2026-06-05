@@ -1,0 +1,20 @@
+.theme-inventario {
+  --color-accent-500: #14b8a6;
+  --color-brand-50: #f0fdfa;
+  --color-brand-100: #ccfbf1;
+  --color-brand-200: #99f6e4;
+  --color-brand-300: #5eead4;
+  --color-brand-400: #2dd4bf;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+  --color-brand-800: #115e59;
+  --color-brand-900: #134e4a;
+}
+
+.theme-inventario .proposal-gradient {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(20, 184, 166, 0.28), transparent),
+    radial-gradient(ellipse 50% 40% at 100% 0%, rgba(15, 118, 110, 0.15), transparent),
+    linear-gradient(180deg, #134e4a 0%, #0f766e 55%, #042f2e 100%);
+}
